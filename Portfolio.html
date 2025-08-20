@@ -11,10 +11,11 @@
       padding: 0;
       background: #f9f9f9;
       color: #333;
+      line-height: 1.6;
     }
 
     header {
-      background: #0077b6;
+      background: linear-gradient(135deg, #0077b6, #00b4d8);
       color: white;
       text-align: center;
       padding: 2rem 1rem;
@@ -25,7 +26,8 @@
       height: 120px;
       border-radius: 50%;
       border: 3px solid white;
-      margin-top: 10px;
+      margin: 15px auto 0;
+      display: block;
     }
 
     section {
@@ -40,6 +42,9 @@
     h2 {
       color: #0077b6;
       margin-bottom: 0.5rem;
+      border-bottom: 2px solid #00b4d8;
+      display: inline-block;
+      padding-bottom: 3px;
     }
 
     ul {
@@ -50,8 +55,15 @@
     ul li {
       background: #e6f2ff;
       margin: 5px 0;
-      padding: 8px;
+      padding: 10px;
       border-radius: 6px;
+      transition: 0.3s;
+    }
+
+    ul li:hover {
+      background: #90e0ef;
+      transform: scale(1.03);
+      cursor: pointer;
     }
 
     footer {
@@ -60,6 +72,22 @@
       background: #0077b6;
       color: white;
       margin-top: 2rem;
+    }
+
+    /* New: Contact Section */
+    .contact-info {
+      text-align: center;
+    }
+
+    .contact-info a {
+      text-decoration: none;
+      color: #0077b6;
+      font-weight: bold;
+      margin: 0 10px;
+    }
+
+    .contact-info a:hover {
+      color: #023e8a;
     }
   </style>
 </head>
@@ -89,6 +117,17 @@
       <li>🎮 Gaming</li>
       <li>💻 Coding & Problem Solving</li>
     </ul>
+  </section>
+
+  <!-- New Contact Section -->
+  <section>
+    <h2>Contact Me</h2>
+    <div class="contact-info">
+      <p>Feel free to reach out to me at:</p>
+      <a href="mailto:neragaurav@example.com">📧 Email</a>
+      <a href="www.linkedin.com/in/neragaurav1223" target="_blank">💼 LinkedIn</a>
+      <a href="https://github.com/neragaurav-1223" target="_blank">🐙 GitHub</a>
+    </div>
   </section>
 
   <!-- Footer Section -->
