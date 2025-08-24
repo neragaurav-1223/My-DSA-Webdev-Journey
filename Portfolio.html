@@ -89,6 +89,32 @@
     .contact-info a:hover {
       color: #023e8a;
     }
+    form {
+  display: flex;
+  flex-direction: column;
+}
+
+input, textarea {
+  padding: 10px;
+  margin: 5px 0 15px 0;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+button {
+  background: #0077b6;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+button:hover {
+  background: #005f80;
+}
   </style>
 </head>
 <body>
@@ -118,6 +144,23 @@
       <li>💻 Coding & Problem Solving</li>
     </ul>
   </section>
+    <!-- Contact Section -->
+  <section>
+    <h2>Contact Me</h2>
+    <form>
+      <label for="name">Name:</label><br>
+      <input type="text" id="name" name="name" placeholder="Enter your name" required><br><br>
+
+      <label for="email">Email:</label><br>
+      <input type="email" id="email" name="email" placeholder="Enter your email" required><br><br>
+
+      <label for="message">Message:</label><br>
+      <textarea id="message" name="message" rows="5" placeholder="Write your message..." required></textarea><br><br>
+
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
   <!-- Projects Section -->
   <section>
     <h2>My Projects</h2>
@@ -171,6 +214,7 @@
   </footer>
 </body>
 </html>
+
 
 
 
